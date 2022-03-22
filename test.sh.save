@@ -1,0 +1,5 @@
+apt update
+ls -l
+test='Update finished and Longlist written.'
+zenity --info --text=$test
+echo $test

@@ -1,0 +1,21 @@
+#!/bin/bash
+#Rechner Parameter
+
+if [ $3 == 1 ]
+then
+	let ergebnis=$1*$2
+	echo $ergebnis
+elif [ $3 == 2 ]
+then
+	let ergebnis=$1/$2
+	echo $ergebnis
+elif [ $3 == 3 ]
+then
+	let ergebnis=$1+$2
+	echo $ergebnis
+elif [ $3 == 4 ]
+then
+	let ergebnis=$1
+else
+	echo "Falsche Angabe für Parameter Nummer 3"
+fi
